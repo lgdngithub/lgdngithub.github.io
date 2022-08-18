@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 150%;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom left, rgb(142, 79, 142), rgba(43, 118, 230, 0.586));
+}
+
+.calculator {
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0);
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.calc_display {
+    text-align: right;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    width: 10rem;
+    padding: .25rem .50rem;
+    
+}
+
+.calc_s_display {
+    text-align: right;
+    background-color: rgb(79, 79, 79);
+    color: white;
+    height: 0.5rem;
+    width: 10rem;
+    padding: .25rem .50rem;
+    font-size: 60%;
+    
+}
+
+button {
+    padding: 15px;  
+
+}
+
+.calc_buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    ". . . ."
+    "seven eight nine eq"
+    "four five six eq"
+    "one two three eq"
+    "zero dot clear eq";
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.dot {
+    grid-area: dot;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.eq {
+    grid-area: eq;
+    border-width: 1px;
+    background-color: rgba(255, 68, 0, 0.700);
+   
+}
+
+.eq:hover,
+.eq:focus {
+    background-color: rgba(255, 68, 0, 0.800);
+
+}
+
+.eq:active {
+    background-color: rgba(255, 68, 0, 0.900);
+
+}
+
+.op:active,
+.num:active,
+.dot:active,
+.clear:active {
+    background: rgb(150, 150, 150);
+
+}
