@@ -56,8 +56,7 @@ const clickOperators = (operators) => {
     secondOperand = "";
   }
   if (firstOperand != "" && operator === "") operator = operators;
-  if (operator === "/") operator = operator.replace("/", "÷");
-  if (operator === "*") operator = operator.replace("*", "x");
+
   updateDisplay();
   updateSecondDisplay();
 };
